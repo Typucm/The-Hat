@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/source/media/fonts/static/Montserrat-Light.ttf") format('woff2');
+  }
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/source/media/fonts/static/Montserrat-Regular.ttf") format('woff2');
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url( "/source/media/fonts/static/Montserrat-Bold.ttf") format('woff2');
+  }
+#priceLisTable{
+    width: 60vw;
+    border-radius: 15px;
+    overflow: hidden;
+    td{
+        height: 3rem;
+        padding: 0 2rem;
+    }
+    tr{
+        border-bottom: solid 1px gray;
+    }
+    tr:last-child{
+        border-bottom: none;
+    }
+}
+#priceLisTable::before{
+    background: rgba(0,0,0,.6);
+    padding: 70px 100px;
+    //border-radius: 1em;
+    backdrop-filter: blur(10px);
+    border: 2px solid transparent;
+    box-shadow: 8px 8px 12px rgba(0,0,0,10%);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#workers{
+    
+    img{
+        transition: ease 0.2s;
+    }
+    img:hover{
+     transform: scale(1.1);
+     transition: ease 0.2s;
+    }
+}
